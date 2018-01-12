@@ -10,7 +10,7 @@ function init() {
     // the Konami code, don't alert() anything and simply keep listening for all
     // ten keydowns in the correct order.
 
-    document.body.addEventListener('keydown', checkSequence(event,code,gotcha,displayAlert) {
+    document.body.addEventListener('keydown', checkSequence(event,code,gotcha,displayAlert)
 
 }
 
