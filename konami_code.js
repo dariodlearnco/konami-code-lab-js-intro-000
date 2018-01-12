@@ -45,5 +45,7 @@ function checkSequence(event,code,thisFar,callBack) {
         thisFar = 0
         callBack()
     }
+
+    // We return the number of correct keystrokes so far
     return thisFar
 }
