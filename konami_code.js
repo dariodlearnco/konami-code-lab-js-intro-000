@@ -10,7 +10,7 @@ function init() {
     // the Konami code, don't alert() anything and simply keep listening for all
     // ten keydowns in the correct order.
 
-    document.body.addEventListener('keydown', checkSequence(event,code,gotcha,displayAlert))
+    document.body.addEventListener('keydown', checkSequenceHandler(event))
 
 }
 
@@ -18,7 +18,11 @@ function displayAlert() {
     alert('You cracked the Konami Kode!')
 }
 
-function checkSequence(e,code,thiFar,callBack) {
+function checkSequenceHandler(event) {
+    checkSequence(event,code,gotcha,displayAlert)
+}
+
+function checkSequence(event,code,thiFar,callBack) {
 
     // Everytime the next right key in the sequence is pressed, we increment
     // the counter that holds how many right keys have been pressed in the
