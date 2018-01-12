@@ -19,6 +19,7 @@ function displayAlert() {
 }
 
 function checkSequenceHandler(event) {
+    console.log("Calling the senquence checker")
     checkSequence(event,code,gotcha,displayAlert)
 }
 
