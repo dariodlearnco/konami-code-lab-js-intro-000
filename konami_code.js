@@ -40,7 +40,7 @@ function checkSequence(event,code,thisFar,callBack) {
 
     // When the number of right keys in the right sequence equals the lenght of
     // the code array, we did it!
-    if ( thisFar === code.lenght ) {
+    if ( thisFar === code.length ) {
         console.log(`You did it!`)
         thisFar = 0
         callBack()
