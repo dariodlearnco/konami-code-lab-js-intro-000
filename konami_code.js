@@ -18,12 +18,12 @@ function displayAlert() {
     alert('You cracked the Konami Kode!')
 }
 
-function checkSequence(event,code,thiFar,callBack) {
+function checkSequence(e,code,thiFar,callBack) {
 
     // Everytime the next right key in the sequence is pressed, we increment
     // the counter that holds how many right keys have been pressed in the
     // right sequence.
-    if (parseInt(event.detail || event.which) === code[thisFar]) {
+    if (parseInt(e.detail || e.which) === code[thisFar]) {
         thisFar += 1
     } else {
         thisFar = 0
