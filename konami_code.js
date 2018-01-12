@@ -28,7 +28,7 @@ function checkSequence(event,code,thisFar,callBack) {
     // Everytime the next right key in the sequence is pressed, we increment
     // the counter that holds how many right keys have been pressed in the
     // right sequence.
-    debugger
+
     if (parseInt(event.detail || event.which) === code[thisFar]) {
         thisFar += 1
     } else {
