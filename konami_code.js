@@ -20,7 +20,7 @@ function displayAlert() {
 
 function checkSequenceHandler(event) {
     console.log("Calling the senquence checker")
-    checkSequence(event,code,gotcha,displayAlert)
+    gotcha=checkSequence(event,code,gotcha,displayAlert)
 }
 
 function checkSequence(event,code,thisFar,callBack) {
@@ -45,4 +45,5 @@ function checkSequence(event,code,thisFar,callBack) {
         thisFar = 0
         callBack()
     }
+    return thisFar
 }
