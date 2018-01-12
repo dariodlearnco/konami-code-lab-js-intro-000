@@ -29,6 +29,8 @@ function checkSequence(event,code,thisFar,callBack) {
     // the counter that holds how many right keys have been pressed in the
     // right sequence.
 
+    console.log(`event.detail: ${parseInt(event.detail)}`)
+    console.log(`event.which: ${parseInt(event.which)}`)
     if (parseInt(event.detail || event.which) === code[thisFar]) {
         thisFar += 1
     } else {
