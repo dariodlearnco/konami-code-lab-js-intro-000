@@ -23,7 +23,7 @@ function checkSequenceHandler(event) {
     checkSequence(event,code,gotcha,displayAlert)
 }
 
-function checkSequence(event,code,thiFar,callBack) {
+function checkSequence(event,code,thisFar,callBack) {
 
     // Everytime the next right key in the sequence is pressed, we increment
     // the counter that holds how many right keys have been pressed in the
